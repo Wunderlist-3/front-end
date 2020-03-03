@@ -1,25 +1,39 @@
 import React from 'react';
-import logo from './logo.svg';
+import {Route} from 'react-router-dom';
+import styled from 'styled-components';
 import './App.css';
+
+//components
+import Navigation from './components/Navigations';
+import Login from './components/Login';
+import Register from './components/Register';
+import Home from './components/Home';
+import ToDoList from './components/ToDoList';
+
+//styled components
+const AppStyle = styled.div`
+  margin: 2%;
+  padding: 1%;
+  text-align: center;
+  color: #e3dac9;
+  
+  `
+
 
 function App() {
   return (
-    <div className="App">
+    <AppStyle>
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        {/* <h1>Wunderlist 2.0</h1> */}
+        <Navigation/>
+        <Route exact path='/'><Home/></Route>
+        <Route path='/login'><Login/></Route>
+        <Route path='/register'><Register/></Route>
       </header>
-    </div>
+      <div>
+        <Route path='/todo'><ToDoList/></Route>
+      </div>
+    </AppStyle>
   );
 }
 
