@@ -1,3 +1,8 @@
+https://front-end-36vvawtdd.now.sh/
+https://front-end-36vvawtdd.now.sh/
+https://front-end-36vvawtdd.now.sh/
+
+
 Known Bugs:
 On adding a new task site will need to be relogged for the task to appear, same with editing task. (will solve this with nested axioswithauth calls)
 
