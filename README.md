@@ -1,6 +1,6 @@
+Deployed Site:
 https://front-end-36vvawtdd.now.sh/
-https://front-end-36vvawtdd.now.sh/
-https://front-end-36vvawtdd.now.sh/
+
 
 
 Known Bugs:
