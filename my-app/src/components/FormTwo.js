@@ -97,7 +97,7 @@ const Form =({dispatch})=>{
         
             <br></br>
             <CardButton type="submit">Add Da Task</CardButton><br></br>
-            <CardButton onClick={clearTask}>Clear Selected</CardButton>
+         
         </form>
         </CardBody>
         </CardWrapper>
